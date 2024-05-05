@@ -1,0 +1,15 @@
+Chewy-Regular
+   * Source: https://fonts.google.com/specimen/Chewy
+   * Credit: Sideshow
+   * License: https://www.apache.org/licenses/LICENSE-2.0
+
+Roboto
+   * Source: https://fonts.google.com/specimen/Roboto
+   * Credit: Christian Robertson
+   * License: Apache License, Version 2.0 - https://www.apache.org/licenses/LICENSE-2.0
+
+SourceCodePro
+   * Source: https://fonts.google.com/specimen/Source+Code+Pro
+   * Credit: Paul D. Hunt
+   * License: SIL Open Font License (OFL) - https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+

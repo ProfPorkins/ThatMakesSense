@@ -1,0 +1,76 @@
+/*
+Copyright (c) 2022 James Dean Mathias
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+#include "RendererChallenge.hpp"
+
+#include "services/Configuration.hpp"
+#include "services/ConfigurationPath.hpp"
+#include "services/Content.hpp"
+#include "services/ContentKey.hpp"
+
+#include <cassert>
+#include <cmath>
+
+namespace systems
+{
+    RendererChallenge::RendererChallenge() :
+        System({ ctti::unnamed_type_id<components::Challenge>() })
+    {
+        ui::Text::Settings settings{
+            false,
+            0, 0,
+            "",
+            Content::get<sf::Font>(content::KEY_FONT_HINT),
+            Configuration::get<sf::Color>(config::FONT_HINT_COLOR_FILL),
+            Configuration::get<sf::Color>(config::FONT_HINT_COLOR_OUTLINE),
+            Configuration::get<std::uint8_t>(config::FONT_HINT_SIZE)
+        };
+        m_textChallenge = std::make_unique<ui::Text>(settings);
+    }
+
+    void RendererChallenge::update([[maybe_unused]] const std::chrono::microseconds elapsedTime, sf::RenderTarget& renderTarget)
+    {
+        assert(m_entities.size() == 0 || m_entities.size() == 1);
+
+        if (m_entities.size() > 0)
+        {
+            auto hint = m_entities.begin()->second->getComponent<components::Challenge>();
+            switch (hint->getState())
+            {
+                case components::Challenge::State::In:
+                    m_textChallenge->setScale(std::lerp(0.0f, 1.0f, static_cast<float>(hint->getTimeInState().count()) / components::Challenge::CHALLENGE_TRANSITION_TIME.count()));
+                    break;
+                case components::Challenge::State::Steady:
+                    // Nothing to do, purposely left blank
+                    break;
+            }
+
+            m_textChallenge->setText(hint->get());
+            // Center in the window, near the bottom
+            m_textChallenge->setPosition(
+                { -(m_textChallenge->getRegion().width / 2.0f),
+                  (Configuration::getGraphics().getViewCoordinates().height * 0.5f) - m_textChallenge->getRegion().height * 1.5f });
+            m_textChallenge->render(renderTarget);
+        }
+    }
+
+} // namespace systems

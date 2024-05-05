@@ -1,0 +1,34 @@
+Kam's Hero Tiles
+	Source: https://voidquail.itch.io/kams-hero-tiles
+	Credit: @VoidMaps
+	License: "You don't need to pay me anything to use this pack, go ahead and use it for whatever you'd like. Crediting me is always nice BTW. What I would like is that if you manage to make anything nifty with these assets, upload an image of it onto the itch.io page for the pack(https://lordkameron.itch.io/kams-hero-tiles)."
+
+checkmark-empty.png
+	Source: https://opengameart.org/content/ui-pack
+	Credit: Kenny
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+checkmark-filled.png
+	Source: https://opengameart.org/content/ui-pack
+	Credit: Kenny
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+hex-flowers.png
+	Source: https://opengameart.org/content/free-handpainted-plants-2
+	Credit: Yughues
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+hex-grass.png
+	Source: https://opengameart.org/content/free-isometric-plants-pack
+	Credit: rubberduck
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+Controller Icons
+	Source: https://opengameart.org/content/free-controller-prompts-xbox-playstation-switch-pc
+	Credit: Terazilla
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+Keyboard & Controller Icons
+	Source: https://opengameart.org/content/free-keyboard-and-controllers-prompts-pack
+	Credit: Xelu
+	License: https://creativecommons.org/publicdomain/zero/1.0/

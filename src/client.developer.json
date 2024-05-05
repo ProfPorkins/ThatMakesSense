@@ -1,0 +1,473 @@
+{
+    "developer": {
+        "main-menu": true,
+        "validate-level-hash": false,
+        "hex-coords": {
+            "render": false,
+            "font": {
+                "filename": "Roboto-Regular.ttf",
+                "size": 10
+            }
+        }
+    },
+    "camera": {
+        "comment": "These values are best if they are odd",
+        "min-range": 6,
+        "max-range": 40
+    },
+    "content": {
+        "font": {
+            "hint": {
+                "filename": "Chewy-Regular.ttf",
+                "size": 50,
+                "color-fill": "255, 255, 0",
+                "color-outline": "0, 0, 0"
+            },
+            "title": {
+                "filename": "Chewy-Regular.ttf",
+                "size": 60,
+                "color-fill": "0, 0, 255",
+                "color-outline": "255, 255, 255"
+            },
+            "menu": {
+                "filename": "Chewy-Regular.ttf",
+                "size": 40,
+                "color-fill": "0, 0, 255",
+                "color-outline": "0, 0, 0",
+                "color-active-fill": "255, 255, 0",
+                "color-active-outline": "0, 0, 0"
+            },
+            "level-select": {
+                "filename": "Chewy-Regular.ttf",
+                "item-size": 26
+            },
+            "challenges": {
+                "filename": "Chewy-Regular.ttf",
+                "title-size": 40,
+                "color-title-fill":"51, 102, 255",
+                "color-title-outline":"0, 0, 0",
+                "header-size": 26,
+                "color-header-fill":"51, 102, 255",
+                "color-header-outline":"0, 0, 0",
+                "item-size": 26,
+                "color-item-fill":"0, 0, 255",
+                "color-item-outline":"0, 0, 0",
+                "color-item-active-fill":"255, 255, 0",
+                "color-item-active-outline":"0, 0, 0"
+            },
+            "credits": {
+                "filename": "Chewy-Regular.ttf",
+                "title-size": 42,
+                "item-size": 34,
+                "color-title-fill": "51, 102, 255",
+                "color-title-outline": "0, 0, 0",
+                "color-item-fill": "255, 255, 0",
+                "color-item-outline":"0, 0, 0"
+            },
+            "settings": {
+                "filename": "Chewy-Regular.ttf",
+                "heading-size": 40,
+                "item-size": 36,
+                "message-size": 24,
+                "color-title-fill": "51, 102, 255",
+                "color-title-outline": "0, 0, 0",
+                "color-fill": "0, 0, 255",
+                "color-outline": "0, 0, 0",
+                "color-active-fill": "255, 255, 0",
+                "color-active-outline": "0, 0, 0",
+                "color-selection-fill": "255, 255, 255",
+                "color-selection-outline": "0, 0, 0"
+            }
+        },
+        "audio": {
+            "menu": {
+                "activate": "menu-activate.wav",
+                "accept": "menu-accept.wav"
+            },
+            "game": {
+                "step": "step.ogg",
+                "sink": "watersplash.ogg",
+                "burn": "fire.ogg",
+                "rule-changed": "rule-changed.ogg",
+                "level-complete": "level-complete.ogg"
+            }
+        },
+        "music": {
+            "background-1": "soliloquy.ogg",
+            "background-2": "desolate.ogg",
+            "background-3": "evasion.ogg",
+            "background-4": "wasteland-overdrive.ogg"
+        },
+        "image": {
+            "menu-background": "",
+            "checkmark-empty": "checkmark-empty.png",
+            "checkmark-pre-filled": "checkmark-pre-filled.png",
+            "checkmark-bc-filled": "checkmark-bc-filled.png",
+            "help-keyboard-movement": "help-keyboard-movement.png",
+            "help-keyboard-camera": "help-keyboard-camera.png",
+            "help-controller-movement-xbox": "help-controller-movement-xbox.png",
+            "help-controller-camera-xbox": "help-controller-camera-xbox.png",
+            "help-controller-movement-ps": "help-controller-movement-ps.png",
+            "help-controller-camera-ps": "help-controller-camera-ps.png"
+        },
+        "levels": {
+            "file": "game.puzzles",
+            "images-static" : {
+                "hex-outline-256": {
+                    "filename": "hex-outline-256.png",
+                    "sprite-color": "0, 0, 0"
+                },
+                "phrase-direction-1024": {
+                    "filename": "direction-chevron-1024.png",
+                    "sprite-color": "255, 255, 0, 150"
+                }
+            },
+            "images-animated": {
+                "i-am-highlight-512": {
+                    "filename": "i-am-highlight-animated-512.png",
+                    "sprite-count": 20,
+                    "sprite-time": 100,
+                    "sprite-color": "255, 255, 0"
+                },
+                "goal-highlight": {
+                    "filename": "goal-highlight.png",
+                    "sprite-count": 34,
+                    "sprite-time": 50,
+                    "sprite-color": "255, 255, 0"
+                },
+                "send-highlight": {
+                    "filename": "send-highlight.png",
+                    "sprite-count": 30,
+                    "sprite-time": 50,
+                    "sprite-color": "255, 255, 0"
+                },
+                "particle-general": {
+                    "filename": "particle-general.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1
+                },
+                "particle-burn": {
+                    "filename": "particle-burn.png",
+                    "sprite-count": 16,
+                    "sprite-time": 100
+                },
+                "particle-sink": {
+                    "filename": "particle-bubble.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1
+                },
+                "particle-new-phrase": {
+                    "filename": "particle-new-phrase.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1
+                },
+                "particle-level-complete-pre": {
+                    "filename": "particle-checkmark-pre.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1
+                },
+                "particle-level-complete-bc": {
+                    "filename": "particle-checkmark-bc.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1
+                }
+            },
+            "images-objects": {
+                "wall": {
+                    "filename-animated": "hex-gravel.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 255"
+                },
+                "floor": {
+                    "filename-animated": "hex-floor.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 255"
+                },
+                "grass": {
+                    "filename-animated": "hex-grass.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 255"
+                },
+                "flowers": {
+                    "filename-animated": "hex-flowers.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 255"
+                },
+                "purple": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "128, 0, 128"
+                },
+                "background_purple": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "128, 0, 128"
+                },
+                "grey": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "128, 128, 128"
+                },
+                "background_grey": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "128, 128, 128"
+                },
+                "green": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "0, 128, 0"
+                },
+                "background_green": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "0, 128, 0"
+                },
+                "blue": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "0, 0, 255"
+                },
+                "background_blue": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "0, 0, 255"
+                },
+                "red": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 0, 0"
+                },
+                "background_red": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 0, 0"
+                },
+                "brown": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "123, 63, 0"
+                },
+                "background_brown": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "123, 63, 0"
+                },
+                "yellow": {
+                    "filename-animated": "hex-plastic.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 0"
+                },
+                "background_yellow": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 0"
+                },
+                "black": {
+                    "filename-animated": "hex-empty.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "0, 0, 0"
+                },
+                "background_white": {
+                    "filename-animated": "hex-textured.png",
+                    "sprite-count": 1,
+                    "sprite-time": 1000,
+                    "sprite-color": "255, 255, 255"
+                },
+                "text-i": {
+                    "filename-animated": "text-i-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0,0,0"
+                },
+                "text-is": {
+                    "filename-animated": "text-is-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-am": {
+                    "filename-animated": "text-am-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0,0,0"
+                },
+                "text-can": {
+                    "filename-animated": "text-can-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-and": {
+                    "filename-animated": "text-and-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-word": {
+                    "filename-animated": "text-word-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-wall": {
+                    "filename-animated": "text-wall-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-floor": {
+                    "filename-animated": "text-floor-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-flowers": {
+                    "filename-animated": "text-flowers-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-grass": {
+                    "filename-animated": "text-grass-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-purple": {
+                    "filename-animated": "text-purple-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-grey": {
+                    "filename-animated": "text-grey-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-green": {
+                    "filename-animated": "text-green-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-blue": {
+                    "filename-animated": "text-blue-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-red": {
+                    "filename-animated": "text-red-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-brown": {
+                    "filename-animated": "text-brown-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-yellow": {
+                    "filename-animated": "text-yellow-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-black": {
+                    "filename-animated": "text-black-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-goal": {
+                    "filename-animated": "text-goal-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-climb": {
+                    "filename-animated": "text-climb-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-float": {
+                    "filename-animated": "text-float-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-chill": {
+                    "filename-animated": "text-chill-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-push": {
+                    "filename-animated": "text-push-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-pull": {
+                    "filename-animated": "text-pull-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-stop": {
+                    "filename-animated": "text-stop-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-steep": {
+                    "filename-animated": "text-steep-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-water": {
+                    "filename-animated": "text-water-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-hot": {
+                    "filename-animated": "text-hot-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                },
+                "text-send": {
+                    "filename-animated": "text-send-256.png",
+                    "sprite-count": 20,
+                    "sprite-time": 50,
+                    "sprite-color": "0, 0, 0"
+                }
+            }
+        } 
+    }
+}

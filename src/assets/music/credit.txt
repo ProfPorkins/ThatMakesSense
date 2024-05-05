@@ -1,0 +1,23 @@
+soliloquy.ogg
+	Source: https://opengameart.org/content/soliloquy
+	Credit: Matthew Pablo
+	License: https://creativecommons.org/licenses/by/3.0/
+	Notes: Converted to an .ogg container
+
+sasteland-overdrive.ogg
+	Source: https://opengameart.org/content/wasteland-overdrive
+	Credit: Matthew Pablo
+	License: https://creativecommons.org/licenses/by/3.0/
+	Notes: Converted to an .ogg container
+
+desolate.ogg
+	Source: https://opengameart.org/content/desolate
+	Credit: Matthew Pablo
+	License: https://creativecommons.org/licenses/by/3.0/
+	Notes: Converted to an .ogg container
+
+evasion.ogg
+	Source: https://opengameart.org/content/evasion
+	Credit: Matthew Pablo
+	License: https://creativecommons.org/licenses/by/3.0/
+	Notes: Converted to an .ogg container

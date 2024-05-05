@@ -1,0 +1,12 @@
+[submodule "src/ThirdParty/SFML"]
+	path = src/ThirdParty/SFML
+	url = https://github.com/SFML/SFML.git
+	branch = 2.5.x
+[submodule "src/ThirdParty/rapidjson"]
+	path = src/ThirdParty/rapidjson
+	url = https://github.com/Tencent/rapidjson.git
+	branch = master
+[submodule "src/ThirdParty/ctti"]
+	path = src/ThirdParty/ctti
+	url = https://github.com/Manu343726/ctti.git
+	branch = master

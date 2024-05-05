@@ -1,0 +1,44 @@
+{
+    "graphics": {
+        "resolution": {
+            "width": 1920,
+            "height": 1080
+        },
+        "bpp": 32,
+        "full-screen": false,
+        "vsync": true
+    },
+    "keyboard": {
+        "repeat-delay": 200,
+        "up-left": "q",
+        "up-right": "e",
+        "left": "a",
+        "right": "d",
+        "down-left": "z",
+        "down-right": "c",
+        "pan-left": "left",
+        "pan-right": "right",
+        "pan-up": "up",
+        "pan-down": "down",
+        "zoom-in": "page-up",
+        "zoom-out": "page-down",
+        "toggle-phrase": "d",
+        "undo": "u",
+        "reset": "r",
+        "toggle-phrase-rendering": "s"
+    },
+    "mouse": {
+        "invert-pan-horz": false,
+        "invert-pan-vert": false,
+        "invert-zoom": false
+    },
+    "controller": {
+        "repeat-delay": 200
+    },
+    "music": {
+        "play-background": true
+    },
+    "other": {
+        "show-hints": true
+    }
+}

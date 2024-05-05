@@ -1,0 +1,42 @@
+menu-activate.wav
+	https://freesound.org/data/previews/435/435997_2975501-lq.ogg
+	Source: https://freesound.org/people/Soundscapes55/sounds/435997/
+	Credit: Soundscapes55
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+menu-accept.wav
+	Source: https://opengameart.org/content/gui-sound-effects
+	Credit: LokiF
+	License: https://creativecommons.org/licenses/by/3.0/
+
+step.ogg
+	Source: https://opengameart.org/content/step-sound-walking
+	Credit: IgnasD
+	License: https://creativecommons.org/licenses/by-sa/3.0/
+
+level-complete.ogg
+	Source: https://opengameart.org/content/win-jingle
+	Credit: Fupi
+	License: https://creativecommons.org/publicdomain/zero/1.0/
+
+rule-changed.ogg
+	Source: https://opengameart.org/content/3-heal-spells
+	Credit: DoKashiteru
+	License: https://creativecommons.org/licenses/by-sa/3.0/
+	Renamed and converted to ogg format, also shortened length of the clip
+
+watersplash.ogg
+	Source: https://opengameart.org/content/water-splash-yo-frankie
+	Credit: Blender Foundation
+	License: https://creativecommons.org/licenses/by-sa/3.0/
+
+fire.ogg
+	Source: https://opengameart.org/content/fire-evil-spell
+	Credit: artisticdude
+	License: https://creativecommons.org/licenses/by-sa/3.0/
+
+entity-send.ogg
+	Source: https://opengameart.org/content/warp-sound-2
+	Credit: Arthur
+	License: https://creativecommons.org/licenses/by-sa/3.0/
+	Renamed

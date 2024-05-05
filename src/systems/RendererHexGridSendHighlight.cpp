@@ -1,0 +1,59 @@
+/*
+Copyright (c) 2022 James Dean Mathias
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+#include "RendererHexGridSendHighlight.hpp"
+
+#include "components/Ability.hpp"
+#include "components/Position.hpp"
+#include "entities/Factory.hpp"
+#include "services/ConfigurationPath.hpp"
+#include "services/ContentKey.hpp"
+
+namespace systems
+{
+    RendererHexGridSendHighlight::RendererHexGridSendHighlight(std::shared_ptr<Level> level, std::function<void(entities::EntityPtr)> addEntity) :
+        RendererHexGridHighlight({ ctti::unnamed_type_id<components::Object>(),
+                                   ctti::unnamed_type_id<components::Position>(),
+                                   ctti::unnamed_type_id<components::Ability>() },
+                                 level, addEntity)
+    {
+        // We make an entity that has the animated sprite that is rendered over every Ability::Send object.
+        m_highlight = std::make_shared<entities::Entity>();
+        m_highlight->addComponent(entities::createAnimatedSprite(config::DOM_IMAGES_ANIMATED, "send-highlight", content::KEY_IMAGE_SEND_HIGHLIGHT));
+        m_texture = m_highlight->getComponent<components::AnimatedSprite>()->getSprite()->getTexture();
+
+        m_addEntity(m_highlight);
+    }
+
+    // --------------------------------------------------------------
+    //
+    // Have to additionally check the Property component to see if
+    // it is a send entity
+    //
+    // --------------------------------------------------------------
+    bool RendererHexGridSendHighlight::isInterested(const entities::EntityPtr& entity)
+    {
+        return System::isInterested(entity) &&
+               entity->getComponent<components::Ability>()->has(components::AbilityType::Send);
+    }
+
+} // namespace systems
