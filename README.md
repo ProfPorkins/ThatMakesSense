@@ -6,4 +6,4 @@ This repository contains the source code for the [_That Makes Sense_](https://st
 
 The code is written in C++, uses the [SFML](https://www.sfml-dev.org/), [CTTI](https://github.com/Manu343726/ctti), and [RapidJson](https://github.com/Tencent/rapidjson) libraries.  It builds and runs on Windows using MSVC, Linux using g++, and macOS using llvm.  Additionally, the project utilizes [CMake](https://cmake.org/) to generate platform specific build systems.
 
-Instructions for Windows, Linux, and macOS are found at [this page](https://github.com/ProfPorkins/ThatMakesSense/blob/main/Developer-Instructions.md).
+Instructions for Windows, Linux, and macOS are found at [this page](https://github.com/ProfPorkins/ThatMakesSense/blob/main/Developer-Setup.md).
