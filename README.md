@@ -1,4 +1,4 @@
-# ThatMakesSense
+# That Makes Sense
 
 This repository contains the source code for the [_That Makes Sense_](https://store.steampowered.com/app/2166500/That_Makes_Sense/) game.  The source doesn't include the Steam specifics like the leader boards, achievements, and Steam overlay, but it is otherwise the complete source code.  In fact, while working on the documentation, I've made revisions to the code, that aren't in the release available on Steam.  None of the changes affect the game play, they are improvements to the implementation.  The reason for making it publicly available is to provide an example of a complete game.
 

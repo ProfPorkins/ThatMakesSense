@@ -13,13 +13,13 @@ The following development tools must be installed:
 
 The next step is to clone and build the code.  The following steps can be used to do this.
 
-1. Clone the repository.  This can be done using a command line or a tool with a GUI.  I personally use GitExtensions, but do most things from the command line inside of it.  The repository is located at: https://github.com/ProfPorkins/ThatMakesSense.git
+1. Clone the repository.
 1. Navigate into the `/src` folder
 1. Initialize the submodules: `git submodule update --init --recursive`
 1. Run the CMake GUI
    1. For the **Where is the source code** field navigate to the /src folder.
    1. For the **Where to build the binaries** use the same pathname from above, but add a `/build` folder to it.
-   1. Press the **Configure** button.  It will likely result in an error, with a conflict related to gtest, this is expected.
+   1. Press the **Configure** button.
    1. For each of the following projects in the CMake GUI, only the following settings should be set to checked, everything else should be unchecked:
       1. SFML
          * SFML_BUILD_AUDIO
@@ -72,7 +72,7 @@ The next step is to clone and build the code.  The following steps can be used t
 1. Run the CMake GUI
    1. For the **Where is the source code** field navigate to the /src folder.
    1. For the **Where to build the binaries** use the same pathname from above, but add a `/build` folder to it.
-   1. Press the **Configure** button.  It will likely result in an error, with a conflict related to gtest, this is expected.
+   1. Press the **Configure** button.
    1. For each of the following projects in the CMake GUI, only the following settings should be set to checked, everything else should be unchecked:
       1. SFML
          * SFML_BUILD_AUDIO
@@ -111,7 +111,7 @@ The following development tools must be installed:
 1. Run the CMake GUI
    1. For the **Where is the source code** field navigate to the /src folder.
    1. For the **Where to build the binaries** use the same pathname from above, but add a `/build` folder to it.
-   1. Press the **Configure** button.  It will likely result in an error, with a conflict related to gtest, this is expected.
+   1. Press the **Configure** button.
    1. For each of the following projects in the CMake GUI, only the following settings should be set to checked, everything else should be unchecked:
       1. SFML
          * SFML_BUILD_AUDIO
