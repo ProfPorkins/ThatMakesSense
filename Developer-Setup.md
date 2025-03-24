@@ -66,7 +66,7 @@ The following development tools must be installed:
 
 The next step is to clone and build the code.  The following steps can be used to do this.
 
-1. Clone the Game Techniques repository: `git clone https://github.com/ProfPorkins/ThatMakesSense.git`
+1. Clone the repository: `git clone https://github.com/ProfPorkins/ThatMakesSense.git`
 1. Navigate into the `/src` folder
 1. Initialize the submodules: `git submodule update --init --recursive`
 1. Run the CMake GUI
@@ -104,7 +104,7 @@ The following development tools must be installed:
 * git
 * CMake
 
-1. Clone the Game Techniques repository: `git clone https://github.com/ProfPorkins/ThatMakesSense.git`
+1. Clone the repository: `git clone https://github.com/ProfPorkins/ThatMakesSense.git`
 1. Navigate into the `/src` folder
 1. Initialize the submodules: `git submodule update --init --recursive`
 1. Using git, checkout the `macOS` branch: `git checkout macOS`
